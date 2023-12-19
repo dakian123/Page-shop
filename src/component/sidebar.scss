@@ -1,0 +1,186 @@
+.sidebar {
+    padding-top: 5px;
+}
+
+.sidebar__category,
+.sidebar__brand,
+.sidebar__price {
+    padding-bottom: 50px;
+}
+
+.sidebar__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 35px;
+    padding-left: 5px;
+}
+
+.sidebar__title-heading {
+    color: var(--text-heading);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: 0.4px;
+}
+
+
+.sidebar__divider {
+    margin: 25px 35px 20px 5px;
+    background-color: var(--lines-gray-line);
+    height: 1px;
+}
+
+.sidebar__category-content {
+    flex-direction: column;
+    padding-right: 35px;
+    padding-left: 5px;
+    margin: -10px 0;
+}
+
+.sidebar__group {
+    padding: 10px 0;
+}
+
+.sidebar__dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sidebar__checkbox {
+    display: flex;
+    align-items: center;
+
+    div {
+        padding-left: 10px;
+
+    }
+
+    span {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: var(--text-text-gray);
+        position: relative;
+
+        img {
+            display: none;
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked {
+            ~span {
+                background-color: var(--bg-black);
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: block;
+
+                }
+            }
+        }
+    }
+}
+
+.sidebar__category-info {
+    label {
+        padding: 8px 0;
+    }
+
+    padding-left: 25px;
+}
+
+.sidebar__paragraph {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: -0.3px;
+}
+
+.sidebar__paragraph--heading-color {
+    color: #333;
+
+}
+
+.sidebar__paragraph--text-color {
+    color: var(--text-text);
+
+}
+
+.sidebar__brand-content {
+    flex-direction: column;
+    padding-right: 35px;
+    padding-left: 5px;
+}
+
+.sidebar__circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--action-blue);
+    border-radius: 50%;
+}
+
+.sidebar__line {
+    height: 2px;
+    width: 285px;
+    background-color: var(--action-blue);
+
+}
+
+.sidebar__price-content {
+    padding: 15px 35px 0 5px;
+}
+
+.sidebar__price-slider {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__price-display {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__price-value {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: -0.3px;
+}
+
+.sidebar__text {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__text-range {
+    color: var(--text-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+.sidebar__text-filter {
+    color: var(--action-blue);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
